@@ -4,11 +4,19 @@
 
 Dowload kdiff3 + Transmission + brew install bash (4)
 
-* Add the following to  `~/.bashrc`, `~/.bash_profile` and `~/.profile` files:
+* Add the following to  `~/.bashrc` file so customisation can be added afterward:
 
 ```
 if [ -f ~/dotfiles/bashrc ]; then
-source ~/dotfiles/bashrc
+  source ~/dotfiles/bashrc
+fi
+```
+
+* And add the following to `~/.bash_profile` and `~/.profile` files:
+
+```
+if [ -f ~/dotfiles/bashrc ]; then
+  source ~/.bashrc
 fi
 ```
 
