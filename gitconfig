@@ -1,0 +1,60 @@
+[user]
+  name = Guillaume Fourret
+  email = fourretg@gmail.com
+[github]
+  user = giushansen
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+[alias]
+  co = checkout
+	l =  log —oneline
+  amend = commit --amend --all
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  unpushed = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  df = diff --color --color-words --abbrev
+  # Show the diff between the latest commit and the current state
+  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+[credential]
+  helper = osxkeychain
+[fetch]
+  prune = true
+[merge]
+  keepBackup = false;
+  tool = kdiff3
+  defaultToUpstream = true
+[push]
+  default = current
+[mergetool "kdiff3"]
+  cmd = kdiff3 $BASE $LOCAL $REMOTE $MERGED
+  trustExitCode = false
+[diff]
+  tool = kdiff3
+[difftool "kdiff3"]
+  cmd = kdiff3 $LOCAL $REMOTE
+  trustExitCode = false
+# so much color
+[color]
+	ui = always
+[color "diff"]
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
