@@ -2,7 +2,7 @@
 
 ## Installation
 
-Dowload kdiff3 + Transmission + brew install bash (4)
+Dowload kdiff3 + Transmission + brew install bash + brew install coreutils
 
 * Add the following to  `~/.bashrc` file so customisation can be added afterward:
 

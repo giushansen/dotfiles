@@ -6,7 +6,7 @@ alias mv='mv -v'
 alias rm='rm -v'
 alias cp='cp -v'
 
-alias ll=‘ls -lAt’
+#alias ll='ls -lAt'
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
@@ -14,7 +14,6 @@ alias undopush="git push -f origin HEAD^:master"
 # Faster Git
 alias gs='git status'
 alias gd='git diff'
-alias gco='git checkout'
 
 # Recursively delete `.DS_Store` files
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
@@ -30,14 +29,14 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # RAILS
-alias rs='bundle exec rails s -p 3000’
+alias rs='bundle exec rails s -p 3000'
 alias rj='bundle exec rake jobs:work'
 alias rc='bundle exec rails console'
-alias a='cd ~/Apps/‘
+alias a='cd ~/Apps/'
 alias guard!='RAILS_ENV=test be rake db:drop db:setup --trace; guard'
 alias rsp='rspec spec'
 alias rdm='rake db:migrate'
 
 # NODE
-alias ns=‘npm start’
+alias ns='npm start'
 alias clean_npm='npm prune; npm install; rm tmp/bundles/*'
