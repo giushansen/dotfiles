@@ -9,6 +9,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin/:$PATH"
 
 export DISABLE_SPRING=yes
 
