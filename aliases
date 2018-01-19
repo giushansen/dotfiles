@@ -11,6 +11,12 @@ alias ll='ls -lAt'
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
+# Move faster
+alias api='cd ~/Octochef/octochef-api'
+alias wid='cd ~/Octochef/octochef-widget'
+alias app='cd ~/Octochef/octochef-app'
+alias ans='cd ~/Octochef/devops/octochef'
+
 # Faster Git
 alias gs='git status'
 alias gd='git diff'
