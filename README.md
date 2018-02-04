@@ -32,6 +32,8 @@ This will load the `bashrc` config everywhere along with `bash_prompt`, `exports
 
 `cp ~/dotfiles/gitignore ~/.gitignore`
 
+`cp ~/dotfiles/irbrc ~/.irbrc`
+
 * FYI ~./ssh/config example
 ```
 Host examples-mac-mini.local
@@ -39,12 +41,12 @@ Host examples-mac-mini.local
   User developer
   IdentitiesOnly yes
   IdentityFile /Users/example/.ssh/id_rsa
-  
+
 Host example-devau-stage-au
   User ubuntu
   Hostname 10.61.103.69
   ProxyCommand ssh -W %h:%p ubuntu@example-devau-oss1
-    
+
 Host feature-* stage release uat agdata
   User ubuntu
   CheckHostIP no
