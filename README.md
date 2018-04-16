@@ -34,8 +34,24 @@ This will load the `bashrc` config everywhere along with `bash_prompt`, `exports
 
 `cp ~/dotfiles/irbrc ~/.irbrc`
 
-* FYI ~./ssh/config example
+* SSH setup
+
+`ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+
+`eval "$(ssh-agent -s)"`
+
+`ssh-add -K ~/.ssh/id_rsa`
+
+`pbcopy < ~/.ssh/id_rsa.pub`
+
+~./ssh/config example:
+
 ```
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+
 Host examples-mac-mini.local
   Hostname examples-mac-mini.local
   User developer
