@@ -2,7 +2,7 @@
 
 ## Installation
 
-Dowload kdiff3 + Transmission + brew install bash + brew install coreutils
+Dowload kdiff3 + Transmission + brew install bash + brew install coreutils or install them via [ansible](https://github.com/giushansen/mac-ansible)
 
 * Add the following to  `~/.bashrc` file so customisation can be added afterward:
 
